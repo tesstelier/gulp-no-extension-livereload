@@ -1,0 +1,22 @@
+{
+  "name": "gulp-no-extension-livereload",
+  "description": "A gulp task for LiveReload that works out of the box without needing to install any LiveReload browser extensions.",
+  "version": "0.0.1",
+  "keywords": [
+    "browser",
+    "extension",
+    "gulp",
+    "livereload",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": "github:tesstelier/gulp-no-extension-livereload",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "connect-livereload": "^0.6.1",
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "serve-static": "^1.15.0"
+  }
+}
