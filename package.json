@@ -26,8 +26,7 @@
   },
   "devDependencies": {
     "eslint": "^8.32.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-config-google": "^0.14.0"
   },
   "bugs": {
     "url": "https://github.com/tesstelier/gulp-no-extension-livereload/issues"
