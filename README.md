@@ -3,18 +3,18 @@ A gulp task for LiveReload that works out of the box without needing to install 
 
 # Usage
 
-```javascript
-// gulpfile.js
+1. Download this project to your local workspace, e.g. to `path/to/gulp-no-extension-livereload`
+1. Run `npm install` for this project
+1. Add the following to your project's `gulpfile.js`:
 
-const gulpNoExtensionLivereload = require('gulp-no-extension-livereload');
+```javascript
+const gulpNoExtensionLivereload = require('path/to/gulp-no-extension-livereload');
 
 function run() {
-    const options = {
-        rootDir: 'static/',
-        watchGlob: 'static/**/*'
-    };
-
-    gulpNoExtensionLivereload(options);
+    gulpNoExtensionLivereload({
+        rootDir: 'your-dir/',
+        watchGlob: 'your-dir/**/*'
+    });
 }
 
 exports.default = run;
