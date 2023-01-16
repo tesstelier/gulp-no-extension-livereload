@@ -12,7 +12,7 @@ const defaultOptions = {
 /**
  * Start connect server
  *
- * @param {*} config
+ * @param {object} config
  */
 function initServer(config) {
   connect()
@@ -24,7 +24,7 @@ function initServer(config) {
 /**
  * Start LiveReload and watching for files changes
  *
- * @param {*} config
+ * @param {object} config
  */
 function livereload(config) {
   gulpLivereload.listen({port: config.livereloadPort});
@@ -45,7 +45,7 @@ function livereload(config) {
 /**
  * Gulp task to start LiveReload
  *
- * @param {*} options See options in README
+ * @param {object} options See options in README
  */
 function run(options) {
   const config = Object.assign(
