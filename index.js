@@ -33,12 +33,13 @@ function livereload(config) {
   watcher.on('change', function onChange(path) {
     gulpLivereload.changed(path); // Just calling gulpLivereload() doesn't work
   });
-  /* Alternatively (con: reloads whole page regardless of which file changed):
-    watch(config.watchGlob, function onChange(cb) {
-        gulpLivereload.reload(); // Simply calling gulpLivereload() doesn't work
-        cb();
-    });
-    */
+  /**
+   * Alternatively (con: reloads whole page regardless of which file changed):
+  watch(config.watchGlob, function onChange(cb) {
+      gulpLivereload.reload(); // Simply calling gulpLivereload() doesn't work
+      cb();
+  });
+   */
 }
 
 /**
